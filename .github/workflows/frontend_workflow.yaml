@@ -26,5 +26,6 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_INSTANT_FORM_475413_N8 }}
           channelId: live
           projectId: ${{ secrets.GCP_PROJECT_ID }}
+          entryPoint: ./Frontend_app/frontend_app
 
 
