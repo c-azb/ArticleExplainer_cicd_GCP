@@ -31,8 +31,8 @@ class Nodes:
             title_ = paper.title
             tmp_file = f'{title_}.pdf'
             tmp_path = f"/tmp/{tmp_file}" 
-            paper.download_pdf(dirpath="/tmp",filename=tmp_file) #./tmp is the only allowed write path on AWS Lambda
-            loader = PyPDFLoader(tmp_path,mode='single')  # uses pdfminer.six internally
+            paper.download_pdf(dirpath="/tmp",filename=tmp_file) #/tmp is the only allowed write path on cloud run
+            loader = PyPDFLoader(tmp_path,mode='single')
             docs = loader.load()
             docs[0].metadata['Title'] = paper.title
             os.remove(tmp_path)
