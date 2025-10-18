@@ -1,0 +1,20 @@
+
+
+
+body{
+    background-color: #242424;
+    color: rgb(233, 238, 243);
+}
+
+
+
+#sidebar_content{
+    overflow-y: auto;
+    height: 80vh;
+    overflow-wrap: break-word;
+}
+
+.sidebar{
+    background-color: rgb(59, 60, 61);
+    color: rgb(216, 215, 215);
+}

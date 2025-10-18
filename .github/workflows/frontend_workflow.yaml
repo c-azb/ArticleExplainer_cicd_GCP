@@ -1,0 +1,46 @@
+
+# name: Deploy to AWS S3
+
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths:
+#       - 'Frontend_app/**'
+#   workflow_dispatch:
+
+# jobs:
+#   deploy:
+#     if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[deploy]')
+#     runs-on: ubuntu-latest
+
+#     defaults:
+#       run:
+#         working-directory: Frontend_app/frontend_app
+
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v4
+
+#       - name: NodeJs Setup
+#         uses: actions/setup-node@v4
+#         with:
+#           node-version: ${{ secrets.NODE_VERSION }}
+
+#       - name: Dependency Installation
+#         run: npm install
+      
+#       - name: App Build
+#         run: npm run build
+      
+#       - name: Configure AWS Credentials
+#         uses: aws-actions/configure-aws-credentials@v5.1.0
+#         with:
+#           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#           aws-region: ${{ secrets.AWS_REGION }}
+        
+#       - name: Deploy to AWS S3
+#         run: aws s3 sync dist s3://${{ secrets.S3BUCKET_NAME }} --delete
+
+

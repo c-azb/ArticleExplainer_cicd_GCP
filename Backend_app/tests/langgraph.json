@@ -1,0 +1,8 @@
+{
+    "dependencies":["."],
+    "graphs":{
+      "article_explainer":"./langgraph_studio_run.py:graph"
+    },
+    "env":"../.env"
+  
+  }
