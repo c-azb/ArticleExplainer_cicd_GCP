@@ -1,5 +1,5 @@
 
-# from dotenv import load_dotenv #not needed for aws deployment
+# from dotenv import load_dotenv #not needed for deployment
 # if not load_dotenv(): print("Failed loading dotenv") 
 
 from fastapi import FastAPI
