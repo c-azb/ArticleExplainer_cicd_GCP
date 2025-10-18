@@ -1,6 +1,7 @@
 
 from typing import TypedDict
-from langchain.docstore.document import Document
+#from langchain.docstore.document import Document
+from langchain.schema import Document
 
 class State(TypedDict):
     article_search:str
