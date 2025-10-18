@@ -31,9 +31,9 @@ The frontend application is a react.js application that interacts with the backe
 Deployment
 --
 
-For the deployment was used a CI/CD workflow using github actions found at [.github/workflows](https://github.com/c-azb/ArticleExplainer_cicd_GCP/tree/main/.github/workflows). It uses two workflows: <b>backend_workflow.yaml</b> and <b>frontend_workflow.yaml</b>. 
+For the deployment it was used a CI/CD workflow using github actions found at [.github/workflows](https://github.com/c-azb/ArticleExplainer_cicd_GCP/tree/main/.github/workflows). It uses two workflows: <b>backend_workflow.yaml</b> and <b>frontend_workflow.yaml</b>. 
 
-The <b>backend_workflow.yaml</b> builds an image using a [Dockerfile](https://github.com/c-azb/ArticleExplainer_cicd_GCP/blob/main/Backend_app/Dockerfile) using <b>Cloud Build</b> and deploy it to <b>Cloud Run</b>.
+The <b>backend_workflow.yaml</b> builds an image using a [Dockerfile](https://github.com/c-azb/ArticleExplainer_cicd_GCP/blob/main/Backend_app/Dockerfile) with <b>Google Cloud Build</b> and deploy it to <b>Google Cloud Run</b>.
 
-The <b>frontend_workflow.yaml</b> deploys the frontend application to <b>Google Firebase Hosting</b> service to host a static website that calls the backend application from <b>Clour Run</b>.
+The <b>frontend_workflow.yaml</b> deploys the frontend application to <b>Google Firebase Hosting</b> service to host a static website that calls the backend application hosted at <b>Clour Run</b>.
 
