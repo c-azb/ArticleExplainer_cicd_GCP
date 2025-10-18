@@ -1,11 +1,13 @@
 
 
 fastapi
-langchain
-langgraph
+
+langchain==0.3.27
+langchain-community==0.3.31
+langgraph==0.6.8
+
 arxiv
 langchain-groq
-langchain-community
 pymongo
 uvicorn
 python-jose
