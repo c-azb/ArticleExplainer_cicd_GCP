@@ -1,4 +1,4 @@
-export const API_BASE_URL = "https://vmjz3kafwd4lge2lhu24whhucq0ouiaw.lambda-url.sa-east-1.on.aws"; //"http://127.0.0.1:8000";
+export const API_BASE_URL = "https://article-explainer-gcr-681459540865.southamerica-east1.run.app"; //"http://127.0.0.1:8000";
 
 export const LOGIN_API_ENDPOINT = API_BASE_URL + "/user/login";
 export const LOGOUT_API_ENDPOINT = API_BASE_URL + "/user/logout";
